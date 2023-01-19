@@ -39,4 +39,11 @@ class HomeController extends Controller
 
         return $soma;
     }
+
+    public function sub($num1, $num2){
+        $sub = $num1 - $num2;
+        logger()->info('Sub feita', compact('num1', 'num2', 'sub'));
+
+        return $sub;
+    }
 }
